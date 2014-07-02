@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 	        proxy: {
 	            host: 'localhost'
 	        }
-	    },
+	    }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');	
