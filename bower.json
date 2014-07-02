@@ -1,0 +1,23 @@
+{
+  "name": "protos",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "bootstrap.css": "latest",
+    "components-font-awesome": "latest",
+    "ember.js": "latest",
+    "q": "latest",
+    "swiper": "latest",
+    "ember-data": "~0.0.14",
+    "ember": "~1.3.0",
+    "handlebars": "~1.3.0"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
