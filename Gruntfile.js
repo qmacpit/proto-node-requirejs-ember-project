@@ -32,16 +32,11 @@ module.exports = function(grunt) {
 		          return dest + filename.split(".")[0] + ".css";
 		        }
 		    }
-		},
-		reload: {
-	        port: 6001,
-	        proxy: {
-	            host: 'localhost'
-	        }
-	    }
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');	
 	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-reload');
+
+	grunt.registerTask('default', 'watch');
 };
