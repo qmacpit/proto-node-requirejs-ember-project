@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 				livereload: true,
 		    },	    
 			scripts: {
-				files: ['public/stylesheets/less/**/*.less', 'public/*.html'],
+				files: ['public/stylesheets/less/**/*.less', 'public/js/**'],
 				tasks: ['less']
 			}
 		},

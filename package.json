@@ -8,6 +8,7 @@
     "grunt-reload": "~0.2.0"
   },
   "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "socket.io": "^1.2.1"
   }
 }
