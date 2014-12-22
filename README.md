@@ -14,7 +14,7 @@ $ cd public/
 $ bower install
 ```
 
-## ru n project
+## run project
 ```bash
 $ grunt
 ```
