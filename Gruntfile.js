@@ -8,22 +8,22 @@ module.exports = function(grunt) {
 				livereload: true,
 		    },	    
 			scripts: {
-				files: ['stylesheets/less/**/*.less', '*.html'],
+				files: ['public/stylesheets/less/**/*.less', 'public/*.html'],
 				tasks: ['less']
 			}
 		},
 		less: {
 		    options: {
-		        paths: 'stylesheets/'
+		        paths: 'public/stylesheets/'
 		    },
 		    src: {
 		        expand: true,
-		        cwd: 'stylesheets/',
+		        cwd: 'public/stylesheets/',
 		        src: [
 		            'less/**/*.less'
 		        ],
 		        ext: '.css',
-		        dest: 'stylesheets/css/',
+		        dest: 'public/stylesheets/css/',
 		        rename: function(dest, src) {
 		        	console.log(src);
 		        	console.log(dest);	
