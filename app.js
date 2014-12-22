@@ -8,6 +8,7 @@ var app = express(),
 	io = require("socket.io")(server);
 
 require("./configuration")(app);
+require("./routes/api")(app);
 
 server.listen(7777, function(err) {
 	console.log("server is listening...")
