@@ -1,5 +1,21 @@
 proto-project
 =============
 
-1. run grunt
-2. load a static index.html file
+## instalation
+
+```bash
+$ sudo npm install -g bower
+```
+```bash
+$ npm install
+```
+```bash
+$ cd public/
+$ bower install
+```
+
+## ru n project
+```bash
+$ grunt
+```
+load a static index.html file
