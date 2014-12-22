@@ -18,4 +18,5 @@ $ bower install
 ```bash
 $ grunt
 ```
-load a static index.html file
+
+open http://localhost:7777/
