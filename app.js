@@ -10,6 +10,6 @@ var app = express(),
 require("./configuration")(app);
 require("./routes/api")(app);
 
-server.listen(7777, function(err) {
+server.listen(3000, function(err) {
 	console.log("server is listening...")
 })

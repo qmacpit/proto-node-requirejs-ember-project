@@ -2,11 +2,9 @@
   "name": "proto-project",
   "version": "0.1.0",
   "dependencies": {
-    "bootstrap": "latest",
-    "bootstrap.css": "latest",
-    "components-font-awesome": "latest",
-    "q": "latest",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "ember": "~1.10.0",
+    "handlebars": "1.3.0"
   },
   "license": "MIT",
   "ignore": [
