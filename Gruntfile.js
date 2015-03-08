@@ -32,11 +32,24 @@ module.exports = function(grunt) {
 		          return dest + filename.split(".")[0] + ".css";
 		        }
 		    }
+		},
+		requirejs: {
+			compile: {
+				options: {
+					baseUrl: "public/js",
+					mainConfigFile: "public/js/main.js",
+					include: [
+						"main"
+					],
+					out: "public/js/main.min.js"
+				}
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');	
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 
 	grunt.registerTask('default', 'watch');
 };
