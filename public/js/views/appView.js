@@ -1,5 +1,5 @@
-define("views/appView", ["text!templates/appTemplate.hbs"], function(AppTemplate){
+define("views/appView", ["hbs!appTemplate"], function(AppTemplate){
 	return Ember.View.extend({	
-		template: Ember.Handlebars.compile(AppTemplate)
+		template: AppTemplate
 	});
 });

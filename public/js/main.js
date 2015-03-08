@@ -6,7 +6,7 @@ require.config({
     	Ember: 'lib/ember/ember',
     	domReady: 'lib/requirejs-domready/domReady',
     	text: 'lib/requirejs-text/text',
-    	// hbs: 'vendor/hbs'
+    	hbs: 'hbs'
   	},
   	shim: {
 	    Ember: {
