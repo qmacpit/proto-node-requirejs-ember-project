@@ -17,14 +17,13 @@ require.config({
 });
 
 
-require(["domReady", "Ember"], function(domReady, Ember){
+require(["domReady", "Ember", "views/appView"], function(domReady, Ember, AppView){
 	domReady(function(){
 		console.log("domeReady");
 		App = Ember.Application.create({});
-		require(["views/appView"], function(AppView){
-			AppView.create({
-				title: "World"
-			}).appendTo("body");
-		})
-	});
+	
+		AppView.create({
+			title: "World"
+		}).appendTo("body");
+	})
 });
