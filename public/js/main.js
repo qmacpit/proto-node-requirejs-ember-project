@@ -9,21 +9,26 @@ require.config({
     	hbs: 'hbs'
   	},
   	shim: {
+  		// EmberTemplates: {
+  		// 	exports: 'EmberTemplates'
+  		// },
 	    Ember: {
 	      deps: ['EmberTemplates', 'jquery'],
 	      exports: 'Ember'
 	    }
-  	}
+  	},
+ //  	map: {
+ //   		'*':{
+ //        	'emberTemplates': 'EmberTemplates'
+ //   		}
+	// }
 });
 
 
-require(["domReady", "Ember", "views/appView"], function(domReady, Ember, AppView){
+require(["domReady", "Ember", "app"], function(domReady, Ember, App){
 	domReady(function(){
 		console.log("domeReady");
-		App = Ember.Application.create({});
-	
-		AppView.create({
-			title: "World"
-		}).appendTo("body");
+		Ember.Application.create({});		
+		App.init();
 	})
 });
