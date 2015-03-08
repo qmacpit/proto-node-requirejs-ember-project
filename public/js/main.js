@@ -4,8 +4,8 @@ require.config({
     	jquery: 'lib/jquery/dist/jquery.min',
     	EmberTemplates: 'lib/ember/ember-template-compiler',
     	Ember: 'lib/ember/ember',
-    	domReady: 'lib/requirejs-domready/domReady'
-    	// text: 'vendor/text',
+    	domReady: 'lib/requirejs-domready/domReady',
+    	text: 'lib/requirejs-text/text',
     	// hbs: 'vendor/hbs'
   	},
   	shim: {
